@@ -1,0 +1,36 @@
+matches:
+
+  - trigger: ;pbj
+    replace: https://theianaquino.github.io/public-journal/
+    word: true
+
+  - trigger: ;dailies
+    replace: https://theianaquino.github.io/public-journal/_dailies/_index-dailies
+    force_mode: clipboard
+
+  - trigger: ;tg
+    replace: https://telegram.me/soro_ffs
+  
+  - trigger: ;dc
+    replace: https://discord.com/users/757517950776246316
+
+  - trigger: ;viber
+    replace: viber://chat?number=%2B639756833648
+
+  - trigger: ;imsg
+    replace: 0975 683 3648
+
+  - trigger: ;num
+    replace: 0975 683 3648
+
+  - trigger: ;email
+    replace: ian.aquino.personal@gmail.com
+
+  - trigger: ;j.readwise
+    replace: https://theianaquino.github.io/public-journal/Readwise/
+
+  - trigger: ;j.matter
+    replace: https://theianaquino.github.io/public-journal/Matter/
+
+  - trigger: ;values
+    replace: https://theianaquino.github.io/public-journal/00_my-values-sheet

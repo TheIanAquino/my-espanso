@@ -1,0 +1,11 @@
+matches:
+
+# Prints the current date in YY-MM-DD | HH:MM:SS :A
+
+  - trigger: ";now"
+    replace: "{{printNow}}"
+    vars:
+      - name: printNow
+        type: date
+        params:
+          format: "%Y-%m-%d | %I:%M:%S %p"

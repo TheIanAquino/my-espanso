@@ -1,0 +1,37 @@
+matches: 
+
+  - trigger: ";update"
+    replace: |
+              Hey {{hatchUpdate.name}}. Sending quick project updates here:
+
+              Project Name: {{hatchUpdate.fruit}}
+
+              Time: {{time}}
+
+              Current Pass Count: {{hatchUpdate.passCount}}
+              
+    vars:
+      - name: "hatchUpdate"
+        type: form
+        params:
+          layout: "NAME: [[name]] \nPROJECT NAME: [[fruit]] \nPASS COUNT: [[passCount]]"
+          fields:
+            name:
+            fruit:
+            passCount:
+              type: list
+              values: 
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+      - name: time 
+        type: date
+        params:
+          format: "%Y-%m-%d | %I:%M:%S %p"

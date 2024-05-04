@@ -1,0 +1,71 @@
+matches:
+# General Replies
+  - trigger: ;hi
+    replace: Hi there
+
+  - trigger: ;lmk
+    replace: let me know
+    propagate_case: true
+
+  - trigger: ;Ff
+    replace: Feel free
+    propagate_case: true
+
+  - trigger: ;uq
+    replace: you have any questions
+    word: true 
+
+  - trigger: ;qs
+    replace: Do you have any questions?
+
+  - trigger: ;questions
+    replace: Let me know if you have any questions!
+
+  - trigger: ;alr
+    replace: alright
+    propagate_case: true
+
+# Thanks
+
+  - trigger: ;ty
+    replace: thank you
+    propagate_case: true
+    word: true
+
+  - trigger: ;tysm
+    replace: thank you so much
+    propagate_case: true
+    force_mode: clipboard
+
+  - trigger: ;app
+    replace: I appreciate it
+
+  - trigger: ;yw
+    replace: you're welcome
+    propagate_case: true
+
+  - trigger: ;np
+    replace: no problem
+    propagate_case: true
+
+  - trigger: ;git
+    replace: got it
+    propagate_case: true
+
+# Remarks
+  - trigger: ;tc
+    replace: take care
+
+  - trigger: ;ily
+    replace: I love you
+    propagate_case: true
+    word: true
+
+  - trigger: ;ilysm
+    replace: I love you so much
+    propagate_case: true
+    word: true 
+
+  - trigger: ;yssw
+    replace: you're so sweet
+    propagate_case: true

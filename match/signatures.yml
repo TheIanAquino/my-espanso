@@ -1,0 +1,30 @@
+matches: 
+  - trigger: ;sig
+    replace: |
+      Best Regards,
+      Ian
+      
+  - trigger: ;sig
+    replace: |
+      All the best, 
+      Ian
+
+  - trigger: ;sig
+    replace: |
+      In all honesty,
+      Ian
+
+  - trigger: ;sig
+    replace: |
+      Wishing you luck, 
+      Ian
+
+  - trigger: ;sig
+    replace: |
+      Looking forward,
+      Ian
+
+  - trigger: ;sig
+    replace: |
+      Sincerely,
+      Ian 

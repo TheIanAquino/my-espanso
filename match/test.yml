@@ -1,0 +1,25 @@
+matches:
+
+# Paragraphs
+  #Introduce yourself
+  - regex: ";me.intro\\((?P<name>.*)\\)"
+    replace: |
+              Hi there, {{name}}!
+
+              I'm Ian -- nice to meet you. I have a list of things that I'm sure you'd appreciate to check out first, so you could get to know me better:
+
+              - Some basic information about me: 
+                https://theianaquino.github.io/public-journal/_READ-ME-FIRST#basic-information
+
+              - My Interests and Skills: 
+                https://theianaquino.github.io/public-journal/_READ-ME-FIRST#interests--skills
+
+              - My Values Sheet: 
+                https://theianaquino.github.io/public-journal/00_my-values-sheet
+
+              Out of the three, I would highly recommend checking out my Values Sheet, as I regard that as one of the main things that people should be aware of, once they start getting to know me.
+
+              Feel free to ask me questions after you check those resources out, should you have any!
+
+              Cheers,
+              Ian
