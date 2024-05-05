@@ -25,6 +25,10 @@ matches:
     replace: alright
     propagate_case: true
 
+  - trigger: ;ew
+    replace: eat well
+    propagate_case: true
+
 # Thanks
 
   - trigger: ;ty
