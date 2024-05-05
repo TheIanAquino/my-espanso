@@ -69,3 +69,11 @@ matches:
   - trigger: ;yssw
     replace: you're so sweet
     propagate_case: true
+
+  - trigger: ;gl
+    replace: good luck
+    propagate_case: true
+
+  - trigger: ;hf
+    replace: have fun
+    propage_case: true
