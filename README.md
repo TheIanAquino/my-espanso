@@ -6,6 +6,6 @@
 
 This repository holds my personal configuration and matches (the actual text replacement snippets) for Espanso. Maybe it will be useful to someone else!
 
-# Author's Note**: 
+# Author's Note: 
 
 I [wrote something about this](https://theianaquino.github.io/public-journal/_dailies/2024-05-04#2024-05-04--115541-pm), if you want to check it out. 🤓
