@@ -33,3 +33,11 @@ matches:
         type: date
         params:
           format: "dev-%Y-%m-%d"
+
+  - trigger: ";devNow"
+    replace: "{{devNow}}"
+    vars:
+      - name: devNow
+        type: date
+        params:
+          format: "# **[[dev-%Y-%m-%d]]** | *%I:%M:%S %p*"
