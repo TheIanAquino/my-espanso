@@ -25,3 +25,11 @@ matches:
         type: date
         params:
           format: "%I:%M:%S %p"
+
+  - trigger: ";devDate"
+    replace: "{{devDate}}"
+    vars:
+      - name: devDate
+        type: date
+        params:
+          format: "dev-%Y-%m-%d"
