@@ -9,3 +9,19 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d | %I:%M:%S %p"
+
+  - trigger: ;date
+    replace: "{{dateNow}}"
+    vars:
+      - name: dateNow
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
+  - trigger: ;time
+    replace: "{{timeNow}}"
+    vars:
+      - name: timeNow
+        type: date
+        params:
+          format: "%I:%M:%S %p"
