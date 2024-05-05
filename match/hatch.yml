@@ -1,5 +1,7 @@
 matches: 
 
+# Outputs a form that asks for three variables: Project Name and Current Pass Time. The third variable is Time, but it's dynamic and automatically printed by Espanso.
+
   - trigger: ";update"
     replace: |
               Hey {{hatchUpdate.name}}. Sending quick project updates here:
