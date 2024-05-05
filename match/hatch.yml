@@ -2,7 +2,7 @@ matches:
 
 # Outputs a form that asks for three variables: Project Name and Current Pass Time. The third variable is Time, but it's dynamic and automatically printed by Espanso.
 
-  - trigger: ";update"
+  - trigger: ";hc.update"
     replace: |
               Hey {{hatchUpdate.name}}. Sending quick project updates here:
 
@@ -37,3 +37,68 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d | %I:%M:%S %p"
+
+# Outputs a form that asks for the variable name, and then asks necessary questions regarding an assigned project.
+
+  - trigger: ";hc.ask"
+    replace: |
+              Hey {{hatchAsk.name}}. 
+              
+              I'm ok to accept this project, given I can get the following details:
+
+              - When is this project due?
+              - Are there upcoming meetings and/or brainstorming sessions that I can join for this project?
+              - Are there existing materials that designers can use (brand books/typefaces, existing design files, etc.)?
+              - Are there additional information that I could use to further my understanding for this project?
+    vars:
+      - name: "hatchAsk"
+        type: form
+        params:
+          layout: "NAME: Put the name of the person who assigned the project: \n[[name]]"
+          fields:
+            name:
+              type: list
+              values:
+                - "@Daqui"
+                - "@Migs"
+                - "@Gino"
+                - "@Gelo"
+                - "@Pat"
+                - "@Third"
+                - "@Abby"
+                - "@Mickie"
+
+# Clarification of the above code. {{hatchConfirm.ExistingMaterials}} should be a list.
+  
+  - trigger: ";hc.confirm"
+    replace: |
+              Repeating current information from our conversation for validation/correction:
+
+              Deadline: 
+              {{hatchConfirm.deadline}}
+
+              Existing Materials: 
+              {{hatchConfirm.existingMaterials}}
+
+              Additional Information: 
+              {{hatchConfirm.additionalInformation}}
+
+              If no mistakes are present, please let me know. 
+              
+              Thank you so much.
+    vars:
+      - name: "hatchConfirm"
+        type: form
+        params:
+          layout: "DEADLINE: [[deadline]] \nEXISTING MATERIALS: [[existingMaterials]] \nADDITIONAL INFORMATION: [[additionalInformation]]"
+          fields:
+            deadline:
+            existingMaterials:
+              multiline: true
+              default: "- Brand Book \n- Typefaces \n- Working deck \n- PR Brief \n- Existing design files"
+            additionalInformation:
+              type: list
+              values:
+                - "Yes"
+                - "No"
+                - "Maybe"
