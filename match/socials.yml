@@ -34,3 +34,6 @@ matches:
 
   - trigger: ;values
     replace: https://theianaquino.github.io/public-journal/00_my-values-sheet
+
+  - trigger: ;github
+    replace: https://github.com/TheIanAquino

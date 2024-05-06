@@ -55,6 +55,7 @@ matches:
   - trigger: ;git
     replace: got it
     propagate_case: true
+    word: true
 
 # Remarks
   - trigger: ;tc
