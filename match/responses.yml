@@ -60,16 +60,6 @@ matches:
   - trigger: ;tc
     replace: take care
 
-  - trigger: ;ily
-    replace: I love you
-    propagate_case: true
-    word: true
-
-  - trigger: ;ilysm
-    replace: I love you so much
-    propagate_case: true
-    word: true 
-
   - trigger: ;yssw
     replace: you're so sweet
     propagate_case: true
