@@ -41,3 +41,25 @@ matches:
         type: date
         params:
           format: "# **[[dev-%Y-%m-%d]]** | *%I:%M:%S %p*"
+
+# Outputs a string in the following format: **[[dev-2024-05-06|dev-2024-05-06-{{context-here}}]]** | *02:47:08 PM*, which I would use a lot in my Obsidian dev log.
+
+
+  - trigger: ";devContext"
+    replace: |
+              {{date}}{{devNow.context}}{{time}}
+    vars:
+      - name: "devNow"
+        type: form
+        params:
+          layout: "What context would you like to add? \n[[context]]"
+          fields:
+            context:
+      - name: "date"
+        type: date
+        params:
+          format: "# **[[dev-%Y-%m-%d|dev-%Y-%m-%d-"
+      - name: "time"
+        type: date
+        params:
+          format:  "]]** | *%I:%M:%S %p*"
