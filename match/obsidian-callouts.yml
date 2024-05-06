@@ -1,0 +1,169 @@
+matches:
+# Quote
+  - trigger: ";oQuote"
+    replace: |
+              >[!QUOTE] {{obsQuote.Title}}
+              >$|$
+    vars:
+      - name: "obsQuote"
+        type: form
+        params:
+          layout: "What title would you like your QUOTE to have? [[Title]]"
+          fields:
+            Title:
+# To Do
+  - trigger: ";oTodo"
+    replace: |
+              >[!TODO] {{obsTodo.Title}}
+              >$|$
+    vars:
+      - name: "obsTodo"
+        type: form
+        params:
+          layout: "What title would you like your TODO to have? [[Title]]"
+          fields:
+            Title:
+# Note
+  - trigger: ";oNote"
+    replace: |
+              >[!NOTE] {{obsNote.Title}}
+              >$|$
+    vars:
+      - name: "obsNote"
+        type: form
+        params:
+          layout: "What title would you like your NOTE to have? [[Title]]"
+          fields:
+            Title:
+# Info
+  - trigger: ";oInfo"
+    replace: |
+              >[!INFO] {{obsInfo.Title}}
+              >$|$
+    vars:
+      - name: "obsInfo"
+        type: form
+        params:
+          layout: "What title would you like your INFO to have? [[Title]]"
+          fields:
+            Title:
+# TLDR
+  - trigger: ";oTldr"
+    replace: |
+              >[!TLDR] {{obsTldr.Title}}
+              >$|$
+    vars:
+      - name: "obsTldr"
+        type: form
+        params:
+          layout: "What title would you like your TLDR to have? [[Title]]"
+          fields:
+            Title:
+# Tip
+  - trigger: ";oTip"
+    replace: |
+              >[!TIP] {{obsTip.Title}}
+              >$|$
+    vars:
+      - name: "obsTip"
+        type: form
+        params:
+          layout: "What title would you like your TIP to have? [[Title]]"
+          fields:
+            Title:
+# Done
+  - trigger: ";oDone"
+    replace: |
+              >[!DONE] {{obsDone.Title}}
+              >$|$
+    vars:
+      - name: "obsDone"
+        type: form
+        params:
+          layout: "What title would you like your DONE to have? [[Title]]"
+          fields:
+            Title:
+# FAQ
+  - trigger: ";oFaq"
+    replace: |
+              >[!FAQ] {{obsFaq.Title}}
+              >$|$
+    vars:
+      - name: "obsFaq"
+        type: form
+        params:
+          layout: "What title would you like your FAQ to have? [[Title]]"
+          fields:
+            Title:
+# Warning
+  - trigger: ";oWarning"
+    replace: |
+              >[!WARNING] {{obsWarning.Title}}
+              >$|$
+    vars:
+      - name: "obsWarning"
+        type: form
+        params:
+          layout: "What title would you like your WARNING to have? [[Title]]"
+          fields:
+            Title:
+# Fail
+  - trigger: ";oFail"
+    replace: |
+              >[!FAIL] {{obsFail.Title}}
+              >$|$
+    vars:
+      - name: "obsFail"
+        type: form
+        params:
+          layout: "What title would you like your FAIL to have? [[Title]]"
+          fields:
+            Title:
+# Missing
+  - trigger: ";oMissing"
+    replace: |
+              >[!MISSING] {{obsMissing.Title}}
+              >$|$
+    vars:
+      - name: "obsMissing"
+        type: form
+        params:
+          layout: "What title would you like your MISSING to have? [[Title]]"
+          fields:
+            Title:
+# Error
+  - trigger: ";oError"
+    replace: |
+              >[!ERROR] {{obsError.Title}}
+              >$|$
+    vars:
+      - name: "obsError"
+        type: form
+        params:
+          layout: "What title would you like your ERROR to have? [[Title]]"
+          fields:
+            Title:
+# Bug
+  - trigger: ";oBug"
+    replace: |
+              >[!TIP] {{obsBug.Title}}
+              >$|$
+    vars:
+      - name: "obsBug"
+        type: form
+        params:
+          layout: "What title would you like your BUG to have? [[Title]]"
+          fields:
+            Title:
+# Example
+  - trigger: ";oExample"
+    replace: |
+              >[!EXAMPLE] {{obsExample.Title}}
+              >$|$
+    vars:
+      - name: "obsExample"
+        type: form
+        params:
+          layout: "What title would you like your EXAMPLE to have? [[Title]]"
+          fields:
+            Title:
