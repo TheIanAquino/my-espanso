@@ -6,23 +6,43 @@ matches:
     replace: |
               Hey {{hatchUpdate.name}}. Sending quick project updates here:
 
-              Project Name: {{hatchUpdate.fruit}}
+              Project Name: 
+              {{hatchUpdate.fruit}}
 
-              Time: {{time}}
+              Time: 
+              {{time}}
 
-              Current Pass Count: {{hatchUpdate.passCount}}
+              Current Pass Count: 
+              
+              Internal: {{hatchUpdate.passCountInt}}
+              External: {{hatchUpdate.passCountExt}}
               
     vars:
       - name: "hatchUpdate"
         type: form
         params:
-          layout: "NAME: [[name]] \nPROJECT NAME: [[fruit]] \nPASS COUNT: [[passCount]]"
+          layout: "NAME: [[name]] \nPROJECT NAME: [[fruit]] \nINTERNAL PASS COUNT: [[passCountInt]] \nEXTERNAL PASS COUNT [[passCountExt]]"
           fields:
             name:
             fruit:
-            passCount:
+            passCountInt:
               type: list
               values: 
+                - "0"
+                - "1"
+                - "2"
+                - "3"
+                - "4"
+                - "5"
+                - "6"
+                - "7"
+                - "8"
+                - "9"
+                - "10"
+            passCountExt:
+              type: list
+              values:
+                - "0"
                 - "1"
                 - "2"
                 - "3"
