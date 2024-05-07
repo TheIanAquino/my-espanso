@@ -37,3 +37,6 @@ matches:
 
   - trigger: ;github
     replace: https://github.com/TheIanAquino
+
+  - trigger: ;readwise
+    replace: https://readwise.io/i/ian161
