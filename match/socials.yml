@@ -1,11 +1,11 @@
 matches:
 
   - trigger: ;pbj
-    replace: https://theianaquino.github.io/public-journal/
+    replace: https://ianaquino.xyz/
     word: true
 
   - trigger: ;dailies
-    replace: https://theianaquino.github.io/public-journal/_dailies/_index-dailies
+    replace: https://ianaquino.xyz/_dailies/_index-dailies
     force_mode: clipboard
 
   - trigger: ;tg
