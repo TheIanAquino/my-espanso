@@ -4,27 +4,31 @@ matches:
 
   - trigger: ";hc.update"
     replace: |
-              Hey {{hatchUpdate.name}}. Sending quick project updates here:
+              🩶 *PROJECT UPDATES:*
 
-              Project Name: 
-              {{hatchUpdate.fruit}}
+              *CONTACT:* 
+              - {{hatchUpdate.name}}.
 
-              Time: 
-              {{time}}
+              *PROJECT NAME:* 
+              - {{hatchUpdate.fruit}}
 
-              Current Pass Count: 
+              *TIME:*
+              - {{time}} 
               
-              Internal: {{hatchUpdate.passCountInt}}
-              External: {{hatchUpdate.passCountExt}}
-              
+              *Internal Pass:* {{hatchUpdate.passCountInt}}
+              *External Pass:* {{hatchUpdate.passCountExt}}
+
+              *LINK:*
+              - {{hatchUpdate.link}}
     vars:
       - name: "hatchUpdate"
         type: form
         params:
-          layout: "NAME: [[name]] \nPROJECT NAME: [[fruit]] \nINTERNAL PASS COUNT: [[passCountInt]] \nEXTERNAL PASS COUNT [[passCountExt]]"
+          layout: "NAME: [[name]] \nPROJECT NAME: [[fruit]] \nINTERNAL PASS COUNT: [[passCountInt]] \nEXTERNAL PASS COUNT [[passCountExt]] \nLINK: [[link]]"
           fields:
             name:
             fruit:
+            link:
             passCountInt:
               type: list
               values: 
