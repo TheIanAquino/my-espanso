@@ -1,0 +1,16 @@
+matches:
+# Dark blue-green
+  - trigger: ";hex.1"
+    replace: "#042529"
+# Light apricot
+  - trigger: ";hex.2"
+    replace: "#FFF0CC"
+# Mint green
+  - trigger: ";hex.3"
+    replace: "#06D6A0"
+# Bright orange
+  - trigger: ";hex.4"
+    replace: "#FF8300"
+# Stark yellow
+  - trigger: ";hex.5"
+    replace: "#FFD100"
